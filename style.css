@@ -1,0 +1,113 @@
+/* style.css */
+
+/* Reset default styles and set box-sizing to border-box for all elements */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set background styles for the body */
+body {
+  background-image: url("pic/background.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Define the grid layout for the container */
+.container {
+  display: grid;
+  grid-template-areas: 
+    "input prediction"
+    "input saved";
+  grid-template-columns: 1fr 2fr; /* Adjusted column widths */
+  max-width: 1400px; /* Adjusted max-width */
+  gap: 20px; /* Added gap for separation */
+  padding: 30px; /* Added padding for separation */
+  background-color: rgba(255, 255, 255, 0.2); /* Transparent white background */
+  border-radius: 15px; /* Increased border-radius */
+}
+
+/* Styles for the input section (Mr. or Ms.?) */
+.input-section {
+  grid-area: input;
+  padding: 20px; /* Increased padding */
+}
+
+/* Styles for the prediction section */
+.prediction-section {
+  grid-area: prediction;
+  border: 1px solid black;
+  padding: 30px; /* Increased padding */
+}
+
+/* Styles for the saved answer section */
+.saved-section {
+  grid-area: saved;
+  border: 1px solid black;
+  padding: 30px; /* Increased padding */
+}
+
+/* Styles for heading elements */
+h1, h2 {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6); /* Transparent black text */
+}
+
+/* Styles for form labels */
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: rgba(0, 0, 0, 0.6); /* Transparent black text */
+}
+
+/* Styles for text input fields */
+input[type="text"] {
+  display: block;
+  width: 100%; /* Full width within the container */
+  margin-bottom: 10px;
+  padding: 15px; /* Increased padding */
+  border: 1px solid rgba(0, 0, 0, 0.6); /* Transparent black border */
+  color: rgba(0, 0, 0, 0.6); /* Transparent black text */
+}
+
+/* Styles for radio buttons */
+.radio-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+/* Styles for buttons */
+button {
+  display: block;
+  width: 100%; /* Full width within the container */
+  margin: 10px 0; /* Top and bottom margin */
+  padding: 15px; /* Increased padding */
+  border: none;
+  background-color: rgba(0, 128, 0, 0.6); /* Transparent green background */
+  color: rgba(255, 255, 255, 0.6); /* Transparent white text */
+  cursor: pointer;
+  border-radius: 8px; /* Rounded corners */
+}
+
+/* Styles for button hover state */
+button:hover {
+  background-color: rgba(0, 100, 0, 0.6); /* Transparent dark green background */
+}
+
+/* Styles for prediction and saved answer text */
+#prediction, #saved {
+  text-align: center;
+  font-size: 18px; /* Adjusted font size */
+  color: rgba(51, 51, 51, 0.6); /* Transparent dark gray text */
+}
