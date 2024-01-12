@@ -9,7 +9,7 @@
 
 /* Set background styles for the body */
 body {
-  background-image: url("pic/background.jpg");
+  background-image: url("./background.jpg");
   background-size: cover;
   background-position: center;
   font-family: Arial, sans-serif;
